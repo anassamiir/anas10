@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egypt National Team</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, -apple-system, sans-serif;
+        }
+
+        body {
+            background: #111;
+            color: #fff;
+            direction: ltr; /* لضمان ضبط الاتجاه مع اللغة الإنجليزية */
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 60px;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: 800;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: #e50914; /* إضافة لمسة باللون الأحمر لعلم مصر */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 30px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e50914;
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0.3) 100%);
+        }
+
+        .content {
+            position: relative;
+            z-index: 10;
+            left: 60px;
+            max-width: 550px;
+        }
+
+        .content h1 {
+            font-size: 64px;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 35px;
+            color: #ddd;
+        }
+
+        button {
+            padding: 16px 40px;
+            border: none;
+            background: #e50914;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(229, 9, 20, 0.4);
+        }
+
+        button:hover {
+            background: #b20710;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(229, 9, 20, 0.6);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+
+            nav a {
+                margin: 0 10px;
+            }
+
+            .content {
+                left: 0;
+                padding: 0 25px;
+                max-width: 100%;
+            }
+
+            .content h1 {
+                font-size: 40px;
+            }
+
+            .content p {
+                font-size: 16px;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">EGY<span>PT</span></div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Players</a>
+        <a href="#">Gallery</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="I (1).jpeg" alt="Egypt National Team Player">
+
+    <div class="overlay"></div>
+
+    <div class="content">
+        <h1>Egypt National Team</h1>
+
+        <p>
+            A memorable celebration for one of Egypt's national team stars.
+            Passion, pride, and determination on the road to victory.
+        </p>
+
+        <button>Explore More</button>
+    </div>
+</section>
+
+</body>
+</html>
